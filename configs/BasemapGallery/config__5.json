@@ -1,0 +1,24 @@
+{
+  "basemapGallery": {
+    "mode": 2,
+    "basemaps": [
+      {
+        "thumbnailUrl": "${appPath}/configs/BasemapGallery/base64Img__5_1633884920412.png",
+        "title": "OpenStreetMap",
+        "layers": [
+          {
+            "opacity": 1,
+            "title": "OpenStreetMap",
+            "visibility": true,
+            "layerType": "OpenStreetMap",
+            "type": "OpenStreetMap",
+            "id": "OpenStreetMap"
+          }
+        ],
+        "spatialReference": {
+          "wkid": "102100"
+        }
+      }
+    ]
+  }
+}

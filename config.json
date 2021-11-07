@@ -1,0 +1,828 @@
+{
+  "theme": {
+    "name": "FoldableTheme",
+    "styles": [
+      "default",
+      "black",
+      "blue",
+      "cyan",
+      "green",
+      "purple",
+      "red",
+      "yellow"
+    ],
+    "version": "2.21",
+    "sharedTheme": {
+      "isPortalSupport": true,
+      "useHeader": false,
+      "useLogo": false
+    }
+  },
+  "portalUrl": "https://geography-ui.maps.arcgis.com",
+  "appId": "",
+  "authorizedCrossOriginDomains": [],
+  "title": "Kabupaten Bantul Map",
+  "subtitle": "with ArcGIS Web AppBuilder",
+  "keepAppState": true,
+  "logo": "images/app-logo.png",
+  "geometryService": "https://utility.arcgisonline.com/arcgis/rest/services/Geometry/GeometryServer",
+  "links": [],
+  "widgetOnScreen": {
+    "widgets": [
+      {
+        "uri": "themes/FoldableTheme/widgets/HeaderController/Widget",
+        "position": {
+          "left": 0,
+          "top": 0,
+          "right": 0,
+          "height": 40,
+          "paddingRight": 275,
+          "relativeTo": "browser"
+        },
+        "version": "2.21",
+        "id": "themes_FoldableTheme_widgets_HeaderController_Widget_1",
+        "name": "HeaderController"
+      },
+      {
+        "uri": "widgets/Scalebar/Widget",
+        "position": {
+          "left": 10,
+          "bottom": 30,
+          "relativeTo": "map"
+        },
+        "version": "2.21",
+        "id": "widgets_Scalebar_Widget_2",
+        "name": "Scalebar"
+      },
+      {
+        "uri": "widgets/Search/Widget",
+        "position": {
+          "right": 2,
+          "top": 2,
+          "relativeTo": "browser",
+          "zIndex": 1
+        },
+        "version": "2.21",
+        "id": "widgets_Search_Widget_3",
+        "name": "Search"
+      },
+      {
+        "uri": "widgets/Coordinate/Widget",
+        "position": {
+          "left": 10,
+          "bottom": 5,
+          "relativeTo": "map"
+        },
+        "version": "2.21",
+        "id": "widgets_Coordinate_Widget_4",
+        "name": "Coordinate"
+      },
+      {
+        "position": {
+          "right": 12,
+          "top": 62,
+          "relativeTo": "map"
+        },
+        "placeholderIndex": 1,
+        "id": "_5",
+        "name": "BasemapGallery",
+        "version": "2.21",
+        "closeable": true,
+        "uri": "widgets/BasemapGallery/Widget",
+        "config": "configs/BasemapGallery/config__5.json"
+      },
+      {
+        "position": {
+          "left": 14,
+          "top": 62,
+          "relativeTo": "map"
+        },
+        "placeholderIndex": 1,
+        "id": "_6"
+      },
+      {
+        "position": {
+          "left": 14,
+          "top": 112,
+          "relativeTo": "map"
+        },
+        "placeholderIndex": 2,
+        "id": "_7"
+      },
+      {
+        "position": {
+          "left": 14,
+          "top": 162,
+          "relativeTo": "map"
+        },
+        "placeholderIndex": 3,
+        "id": "_8"
+      },
+      {
+        "position": {
+          "left": 14,
+          "top": 212,
+          "relativeTo": "map"
+        },
+        "placeholderIndex": 4,
+        "id": "_9"
+      },
+      {
+        "uri": "widgets/OverviewMap/Widget",
+        "position": {
+          "right": 0,
+          "bottom": 0,
+          "zIndex": 1,
+          "relativeTo": "map"
+        },
+        "version": "2.21",
+        "id": "widgets_OverviewMap_Widget_10",
+        "name": "OverviewMap"
+      },
+      {
+        "uri": "widgets/HomeButton/Widget",
+        "position": {
+          "left": 84,
+          "bottom": 64,
+          "relativeTo": "map"
+        },
+        "version": "2.21",
+        "id": "widgets_HomeButton_Widget_11",
+        "name": "HomeButton"
+      },
+      {
+        "uri": "widgets/MyLocation/Widget",
+        "position": {
+          "left": 120,
+          "bottom": 64,
+          "relativeTo": "map"
+        },
+        "version": "2.21",
+        "id": "widgets_MyLocation_Widget_12",
+        "name": "MyLocation"
+      },
+      {
+        "uri": "widgets/AttributeTable/Widget",
+        "position": {
+          "relativeTo": "browser"
+        },
+        "version": "2.21",
+        "id": "widgets_AttributeTable_Widget_13",
+        "name": "AttributeTable"
+      },
+      {
+        "uri": "widgets/Splash/Widget",
+        "visible": false,
+        "position": {
+          "relativeTo": "browser"
+        },
+        "version": "2.21",
+        "id": "widgets_Splash_Widget_14",
+        "name": "Splash"
+      },
+      {
+        "uri": "widgets/ZoomSlider/Widget",
+        "position": {
+          "left": 10,
+          "bottom": 64,
+          "height": 30,
+          "relativeTo": "map"
+        },
+        "version": "2.21",
+        "id": "widgets_ZoomSlider_Widget_15",
+        "name": "ZoomSlider"
+      },
+      {
+        "uri": "widgets/ExtentNavigate/Widget",
+        "visible": false,
+        "position": {
+          "left": 200,
+          "bottom": 64,
+          "height": 30,
+          "relativeTo": "map"
+        },
+        "id": "widgets_ExtentNavigate_Widget_16",
+        "name": "ExtentNavigate",
+        "version": "2.21"
+      },
+      {
+        "uri": "widgets/FullScreen/Widget",
+        "visible": false,
+        "position": {
+          "left": 160,
+          "bottom": 64,
+          "relativeTo": "map"
+        },
+        "version": "2.21",
+        "id": "widgets_FullScreen_Widget_17",
+        "name": "FullScreen"
+      }
+    ],
+    "panel": {
+      "uri": "jimu/OnScreenWidgetPanel",
+      "position": {
+        "relativeTo": "map"
+      }
+    }
+  },
+  "map": {
+    "3D": false,
+    "2D": true,
+    "position": {
+      "left": 0,
+      "top": 40,
+      "right": 0,
+      "bottom": 0
+    },
+    "itemId": "e474a0be97654810a543f0bca1465faa",
+    "mapOptions": {
+      "extent": {
+        "xmin": 12253541.554697296,
+        "ymin": -900949.9777110427,
+        "xmax": 12327379.724020677,
+        "ymax": -865253.8855019136,
+        "spatialReference": {
+          "wkid": 102100
+        }
+      }
+    },
+    "id": "map",
+    "portalUrl": "https://geography-ui.maps.arcgis.com",
+    "mapRefreshInterval": {
+      "useWebMapRefreshInterval": true
+    }
+  },
+  "widgetPool": {
+    "panel": {
+      "uri": "themes/FoldableTheme/panels/FoldablePanel/Panel",
+      "position": {
+        "top": 5,
+        "right": 5,
+        "bottom": 5,
+        "zIndex": 5,
+        "relativeTo": "map"
+      }
+    },
+    "widgets": [
+      {
+        "uri": "widgets/Legend/Widget",
+        "version": "2.21",
+        "id": "widgets_Legend_Widget_18",
+        "name": "Legend",
+        "index": 0
+      },
+      {
+        "uri": "widgets/LayerList/Widget",
+        "version": "2.21",
+        "id": "widgets_LayerList_Widget_19",
+        "name": "LayerList",
+        "index": 1
+      }
+    ]
+  },
+  "mobileLayout": {
+    "widgetOnScreen": {
+      "widgets": [
+        {
+          "uri": "themes/FoldableTheme/widgets/HeaderController/Widget",
+          "position": {
+            "left": 0,
+            "top": 0,
+            "right": 0,
+            "height": 40,
+            "paddingRight": 0,
+            "relativeTo": "browser"
+          },
+          "version": "2.21"
+        },
+        {
+          "uri": "widgets/Scalebar/Widget",
+          "position": {
+            "left": 12,
+            "bottom": 35,
+            "relativeTo": "map"
+          },
+          "version": "2.21"
+        },
+        {
+          "uri": "widgets/Search/Widget",
+          "position": {
+            "left": 12,
+            "right": 12,
+            "top": 10,
+            "relativeTo": "map"
+          },
+          "version": "2.21"
+        },
+        {
+          "uri": "widgets/Coordinate/Widget",
+          "position": {
+            "left": 12,
+            "bottom": 18,
+            "relativeTo": "map"
+          },
+          "version": "2.21"
+        },
+        {
+          "position": {
+            "right": 12,
+            "top": 62,
+            "relativeTo": "map"
+          }
+        },
+        {
+          "position": {
+            "right": 12,
+            "top": 112,
+            "relativeTo": "map"
+          }
+        },
+        {
+          "position": {
+            "right": 12,
+            "top": 162,
+            "relativeTo": "map"
+          }
+        },
+        {
+          "position": {
+            "right": 12,
+            "top": 212,
+            "relativeTo": "map"
+          }
+        },
+        {
+          "position": {
+            "right": 12,
+            "top": 262,
+            "relativeTo": "map"
+          }
+        },
+        {
+          "uri": "widgets/OverviewMap/Widget",
+          "position": {
+            "right": 0,
+            "bottom": 0,
+            "zIndex": 1
+          },
+          "version": "2.21"
+        },
+        {
+          "uri": "widgets/HomeButton/Widget",
+          "inPanel": false,
+          "position": {
+            "left": 12,
+            "top": 102,
+            "relativeTo": "map"
+          },
+          "version": "2.21"
+        },
+        {
+          "uri": "widgets/MyLocation/Widget",
+          "inPanel": false,
+          "position": {
+            "left": 12,
+            "top": 62,
+            "relativeTo": "map"
+          },
+          "version": "2.21"
+        },
+        {
+          "uri": "widgets/AttributeTable/Widget",
+          "version": "2.21",
+          "position": {
+            "relativeTo": "browser"
+          }
+        },
+        {
+          "uri": "widgets/Splash/Widget",
+          "visible": false,
+          "position": {
+            "relativeTo": "browser"
+          },
+          "version": "2.21"
+        },
+        {
+          "uri": "widgets/ZoomSlider/Widget",
+          "visible": true,
+          "position": {
+            "left": 12,
+            "top": 142,
+            "relativeTo": "map"
+          },
+          "version": "2.21"
+        },
+        {
+          "uri": "widgets/ExtentNavigate/Widget",
+          "visible": false,
+          "position": {
+            "top": 209,
+            "left": 12,
+            "relativeTo": "map"
+          },
+          "version": "2.21"
+        },
+        {
+          "uri": "widgets/FullScreen/Widget",
+          "visible": false,
+          "position": {
+            "left": 160,
+            "bottom": 64,
+            "relativeTo": "map"
+          },
+          "version": "2.21"
+        }
+      ]
+    },
+    "map": {
+      "position": {
+        "left": 0,
+        "top": 40,
+        "right": 0,
+        "bottom": 0
+      }
+    },
+    "widgetPool": {
+      "panel": {
+        "uri": "themes/FoldableTheme/panels/FoldablePanel/Panel",
+        "position": {
+          "top": 5,
+          "right": 5,
+          "bottom": 5,
+          "zIndex": 5
+        }
+      }
+    }
+  },
+  "loadingPage": {
+    "backgroundColor": "#508dca",
+    "backgroundImage": {
+      "visible": false
+    },
+    "loadingGif": {
+      "visible": true,
+      "uri": "configs/loading/images/predefined_loading_1.gif",
+      "width": 58,
+      "height": 29
+    }
+  },
+  "wabVersion": "2.21",
+  "isTemplateApp": true,
+  "isWebTier": false,
+  "httpProxy": {
+    "useProxy": true,
+    "alwaysUseProxy": false,
+    "url": "",
+    "rules": []
+  },
+  "dataSource": {
+    "dataSources": {
+      "map~2d71aa020a5a45f3954670785e66f559~25109472803256083": {
+        "type": "Features",
+        "isDynamic": false,
+        "label": "Provinsi",
+        "url": "https://services3.arcgis.com/ph3kXj7c6Bqf3eeX/arcgis/rest/services/Peta_Kabupaten_Bantul_WFL1/FeatureServer/0",
+        "filterByExtent": false,
+        "resultRecordType": "serviceLimitation",
+        "dataSchema": {
+          "objectIdFieldName": "FID",
+          "geometryType": "esriGeometryPoint",
+          "displayFieldName": "provinsi",
+          "typeIdField": "",
+          "fields": [
+            {
+              "name": "FID",
+              "type": "esriFieldTypeOID",
+              "alias": "FID",
+              "sqlType": "sqlTypeOther",
+              "nullable": false,
+              "editable": false,
+              "domain": null,
+              "defaultValue": null,
+              "checked": true,
+              "disabled": true
+            },
+            {
+              "name": "kp",
+              "type": "esriFieldTypeString",
+              "alias": "kp",
+              "sqlType": "sqlTypeOther",
+              "length": 254,
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null,
+              "checked": true,
+              "disabled": false
+            },
+            {
+              "name": "provinsi",
+              "type": "esriFieldTypeString",
+              "alias": "provinsi",
+              "sqlType": "sqlTypeOther",
+              "length": 254,
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null,
+              "checked": true,
+              "disabled": false
+            }
+          ],
+          "orderByFields": [
+            "FID ASC"
+          ]
+        },
+        "id": "map~2d71aa020a5a45f3954670785e66f559~25109472803256083"
+      },
+      "map~c8287ed7f6fd4a348b277d815b9c7a79~5555900859452891": {
+        "type": "Features",
+        "isDynamic": false,
+        "label": "Jaringan Air Minum",
+        "url": "https://services3.arcgis.com/ph3kXj7c6Bqf3eeX/arcgis/rest/services/Peta_Kabupaten_Bantul_WFL1/FeatureServer/1",
+        "filterByExtent": false,
+        "resultRecordType": "serviceLimitation",
+        "dataSchema": {
+          "objectIdFieldName": "FID",
+          "geometryType": "esriGeometryPolyline",
+          "displayFieldName": "name",
+          "typeIdField": "",
+          "fields": [
+            {
+              "name": "FID",
+              "type": "esriFieldTypeOID",
+              "alias": "FID",
+              "sqlType": "sqlTypeOther",
+              "nullable": false,
+              "editable": false,
+              "domain": null,
+              "defaultValue": null,
+              "checked": true,
+              "disabled": true
+            },
+            {
+              "name": "oid_",
+              "type": "esriFieldTypeInteger",
+              "alias": "oid_",
+              "sqlType": "sqlTypeOther",
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null,
+              "checked": true,
+              "disabled": false
+            },
+            {
+              "name": "name",
+              "type": "esriFieldTypeString",
+              "alias": "name",
+              "sqlType": "sqlTypeOther",
+              "length": 254,
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null,
+              "checked": true,
+              "disabled": false
+            },
+            {
+              "name": "folderpath",
+              "type": "esriFieldTypeString",
+              "alias": "folderpath",
+              "sqlType": "sqlTypeOther",
+              "length": 254,
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null,
+              "checked": true,
+              "disabled": false
+            },
+            {
+              "name": "symbolid",
+              "type": "esriFieldTypeInteger",
+              "alias": "symbolid",
+              "sqlType": "sqlTypeOther",
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null,
+              "checked": true,
+              "disabled": false
+            },
+            {
+              "name": "altmode",
+              "type": "esriFieldTypeInteger",
+              "alias": "altmode",
+              "sqlType": "sqlTypeOther",
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null,
+              "checked": true,
+              "disabled": false
+            },
+            {
+              "name": "base",
+              "type": "esriFieldTypeDouble",
+              "alias": "base",
+              "sqlType": "sqlTypeOther",
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null,
+              "checked": true,
+              "disabled": false
+            },
+            {
+              "name": "clamped",
+              "type": "esriFieldTypeInteger",
+              "alias": "clamped",
+              "sqlType": "sqlTypeOther",
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null,
+              "checked": true,
+              "disabled": false
+            },
+            {
+              "name": "extruded",
+              "type": "esriFieldTypeInteger",
+              "alias": "extruded",
+              "sqlType": "sqlTypeOther",
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null,
+              "checked": true,
+              "disabled": false
+            },
+            {
+              "name": "snippet",
+              "type": "esriFieldTypeString",
+              "alias": "snippet",
+              "sqlType": "sqlTypeOther",
+              "length": 254,
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null,
+              "checked": true,
+              "disabled": false
+            },
+            {
+              "name": "popupinfo",
+              "type": "esriFieldTypeString",
+              "alias": "popupinfo",
+              "sqlType": "sqlTypeOther",
+              "length": 254,
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null,
+              "checked": true,
+              "disabled": false
+            },
+            {
+              "name": "shape_leng",
+              "type": "esriFieldTypeDouble",
+              "alias": "shape_leng",
+              "sqlType": "sqlTypeOther",
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null,
+              "checked": true,
+              "disabled": false
+            },
+            {
+              "name": "Shape__Length",
+              "type": "esriFieldTypeDouble",
+              "alias": "Shape__Length",
+              "sqlType": "sqlTypeDouble",
+              "nullable": true,
+              "editable": false,
+              "domain": null,
+              "defaultValue": null,
+              "checked": true,
+              "disabled": false
+            }
+          ],
+          "orderByFields": [
+            "FID ASC"
+          ]
+        },
+        "id": "map~c8287ed7f6fd4a348b277d815b9c7a79~5555900859452891"
+      },
+      "map~fb6130cd15a2429b94d6cf140f9503dc~7721347807595347": {
+        "type": "Features",
+        "isDynamic": false,
+        "label": "Drainase",
+        "url": "https://services3.arcgis.com/ph3kXj7c6Bqf3eeX/arcgis/rest/services/Peta_Kabupaten_Bantul_WFL1/FeatureServer/2",
+        "filterByExtent": false,
+        "resultRecordType": "serviceLimitation",
+        "dataSchema": {
+          "objectIdFieldName": "FID",
+          "geometryType": "esriGeometryPolygon",
+          "displayFieldName": "drainase",
+          "typeIdField": "",
+          "fields": [
+            {
+              "name": "FID",
+              "type": "esriFieldTypeOID",
+              "alias": "FID",
+              "sqlType": "sqlTypeOther",
+              "nullable": false,
+              "editable": false,
+              "domain": null,
+              "defaultValue": null,
+              "checked": true,
+              "disabled": true
+            },
+            {
+              "name": "desa",
+              "type": "esriFieldTypeString",
+              "alias": "desa",
+              "sqlType": "sqlTypeOther",
+              "length": 254,
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null,
+              "checked": true,
+              "disabled": false
+            },
+            {
+              "name": "kecamatan",
+              "type": "esriFieldTypeString",
+              "alias": "kecamatan",
+              "sqlType": "sqlTypeOther",
+              "length": 254,
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null,
+              "checked": true,
+              "disabled": false
+            },
+            {
+              "name": "kabupaten",
+              "type": "esriFieldTypeString",
+              "alias": "kabupaten",
+              "sqlType": "sqlTypeOther",
+              "length": 254,
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null,
+              "checked": true,
+              "disabled": false
+            },
+            {
+              "name": "drainase",
+              "type": "esriFieldTypeInteger",
+              "alias": "drainase",
+              "sqlType": "sqlTypeOther",
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null,
+              "checked": true,
+              "disabled": false
+            },
+            {
+              "name": "Shape__Area",
+              "type": "esriFieldTypeDouble",
+              "alias": "Shape__Area",
+              "sqlType": "sqlTypeDouble",
+              "nullable": true,
+              "editable": false,
+              "domain": null,
+              "defaultValue": null,
+              "checked": true,
+              "disabled": false
+            },
+            {
+              "name": "Shape__Length",
+              "type": "esriFieldTypeDouble",
+              "alias": "Shape__Length",
+              "sqlType": "sqlTypeDouble",
+              "nullable": true,
+              "editable": false,
+              "domain": null,
+              "defaultValue": null,
+              "checked": true,
+              "disabled": false
+            }
+          ],
+          "orderByFields": [
+            "FID ASC"
+          ]
+        },
+        "id": "map~fb6130cd15a2429b94d6cf140f9503dc~7721347807595347"
+      }
+    },
+    "settings": {}
+  }
+}
